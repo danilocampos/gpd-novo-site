@@ -1,0 +1,9 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /novo/
+
+# Serve static files and directories directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# SPA fallback — any unmatched path serves index.html
+RewriteRule ^ index.html [L]
