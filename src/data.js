@@ -1,3 +1,5 @@
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 export const EQUIPMENTS = [
   {
     id: 'munck',
@@ -92,17 +94,15 @@ export const SECTORS = [
   'Agroindústria', 'Eventos', 'Logística', 'Saneamento', 'Papel & Celulose',
 ];
 
-import { asset } from './asset';
-
 export const CLIENT_LOGOS = [
-  { name: 'Votorantim Metais', src: asset('/clientes/votorantim.png') },
-  { name: 'Kinross', src: asset('/clientes/kinross.png') },
-  { name: 'Yamana Gold', src: asset('/clientes/yamana.png') },
-  { name: 'Air Liquide', src: asset('/clientes/airliquide.png') },
-  { name: 'Fidens', src: asset('/clientes/fidens.png') },
-  { name: 'Cimcop', src: asset('/clientes/cimcop.jpg') },
-  { name: 'Koch do Brasil', src: asset('/clientes/koch.jpg') },
-  { name: 'Teixeira Morandini', src: asset('/clientes/teixeira.png') },
-  { name: 'Scavasul', src: asset('/clientes/scavasul.jpg') },
-  { name: 'Trans Amigos', src: asset('/clientes/transamigos.png') },
+  { name: 'Votorantim Metais', src: `${b}/clientes/votorantim.png` },
+  { name: 'Kinross',           src: `${b}/clientes/kinross.png` },
+  { name: 'Yamana Gold',       src: `${b}/clientes/yamana.png` },
+  { name: 'Air Liquide',       src: `${b}/clientes/airliquide.png` },
+  { name: 'Fidens',            src: `${b}/clientes/fidens.png` },
+  { name: 'Cimcop',            src: `${b}/clientes/cimcop.jpg` },
+  { name: 'Koch do Brasil',    src: `${b}/clientes/koch.jpg` },
+  { name: 'Teixeira Morandini',src: `${b}/clientes/teixeira.png` },
+  { name: 'Scavasul',          src: `${b}/clientes/scavasul.jpg` },
+  { name: 'Trans Amigos',      src: `${b}/clientes/transamigos.png` },
 ];
